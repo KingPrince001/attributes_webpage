@@ -1,0 +1,179 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: goldenrod;
+}
+a {
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "poppins" sans - serif;
+    color: whitesmoke;
+    position: relative;
+    padding: 0 10px;
+    letter-spacing: 0.5px;
+    font-size: 20px;
+}
+nav {
+    margin: auto;
+    display: flex;
+    height: 100vh;
+    width: 70vw;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 600px;
+    
+}
+a::after {
+    background-color: whitesmoke;
+    width: 0%;
+    height: 3px;
+    bottom: -10px;
+    position: absolute;
+    content: "";
+    left: 0;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+a:hover::after {
+    width: 100%;
+}
+.ctn {
+    padding: 8px 15px;
+    background: cyan;
+    border-radius: 30px;
+    color: red;
+}
+.ctn:hover {
+    background: blue;
+    color: whitesmoke;
+    box-shadow: 4px 4px 6px green;
+}
+.logo {
+    color: whitesmoke;
+    margin-top: 20px;
+    margin-left: 10px;
+    font-family: Helvetica;
+    font-style: inherit;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+}
+header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./img/run.jpg);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    background-attachment: fixed;
+}
+.header-content {
+    margin-top: 300px;
+    margin-left: 500px;
+    justify-content: space-around;
+    color: whitesmoke;
+    letter-spacing: 0.5px;
+}
+.honesty {
+    margin-bottom: 30px;
+    
+}
+.gift{
+    margin-bottom: 20px;
+}
+img {
+    width: 30vw;
+    height: 70vh;
+    border-radius: 10px;
+    transition: transform 0.03s ease;
+}
+img:hover {
+    transform: scale(1.1);
+}
+.tittle {
+    color: blue;
+    margin-top: 20px;
+}
+.par {
+    justify-content: space-around;
+    margin-bottom: 10px;
+    font-size: large;
+    letter-spacing: 0.5px;
+}
+.row {
+    margin-top: 30px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    margin-left: 150px;
+    color: whitesmoke;
+}
+.row.col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.line {
+    width: 150px;
+    height: 4px;
+    background: whitesmoke;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.tittl {
+    color: whitesmoke;
+    font-size: 4vmin;
+    text-align: center;
+    margin-top: 10px;
+    letter-spacing: 0.5px;
+}
+.content-col {
+    width: 40%;
+}
+.image.col {
+    width: 60%;
+}
+.tours.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+.image-gallery img {
+    max-width: 250px;
+    margin: 20px;
+}
+.content-col h1 {
+    font-size: 7vmin;
+    color: whitesmoke;
+    letter-spacing: 0.5px;
+}
+.content-col .line {
+    margin-left: -1px;
+}
+.content-col p {
+    padding: 0;
+    margin: 30px auto;
+    font-size: large;
+    letter-spacing: 0.5px;
+}
+.footer {
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 80px;
+    margin: 0;
+    background: cyan;
+    text-align: center;
+}
+.footer p {
+color: green;
+margin: 20px auto;
+font-size: large;
+}
+.active {
+    color: gold;
+}
